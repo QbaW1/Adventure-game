@@ -1,0 +1,45 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="PO - Gra " Height="500" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1F3E05" Offset="0.998"/>
+                <GradientStop Color="#FF66C617" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="302*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="101*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BtnDifficulty" Content="Poziom trudności" HorizontalAlignment="Left" Height="65" Margin="55,107,0,0" VerticalAlignment="Top" Width="224" Click="BtnDifficulty_Click" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="BtnFight" Content="Szukaj guza" HorizontalAlignment="Left" Height="65" Margin="55,177,0,0" VerticalAlignment="Top" Width="224" Click="BtnFight_Click" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Button x:Name="BtnCreation" Content="Stwórz postać" HorizontalAlignment="Left" Height="65" Margin="55,10,0,0" VerticalAlignment="Top" Width="224" Click="BtnCreation_Click" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image x:Name="MainImage" Source="Lokalizacje/Green_medieval.png"  Margin="156,242,-105,22" Grid.ColumnSpan="4" Grid.Column="2"/>
+        <Button x:Name="BtnGo" HorizontalAlignment="Left" Height="102" Margin="96,128,0,0" VerticalAlignment="Top" Width="178" Click="Btn_Go" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.Column="3">
+            <TextBlock Text="Nowa Lokalizacja" TextWrapping="Wrap" FontFamily="Cooper Black" FontSize="18"/>
+        </Button>
+        <Button x:Name="BtnFind" Grid.Column="4" HorizontalAlignment="Left" Height="102" Margin="8,128,0,0" VerticalAlignment="Top" Width="178" Background="#FFD0A921" FontFamily="Elephant" FontSize="18" Click="BtnFind_Click" Grid.ColumnSpan="2">
+            <TextBlock Text="Przeszkuaj lokalizacje" TextWrapping="Wrap" FontFamily="Cooper Black" FontSize="18"/>
+        </Button>
+        <Button x:Name ="BtnCheckBagPack" Grid.Column="1" Content="Sprawdź plecak" HorizontalAlignment="Left" Height="65" Margin="55,247,0,0" VerticalAlignment="Top" Width="224"  Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.ColumnSpan="2" Click="BtnCheckBagPack_Click" />
+        <Button x:Name ="BtnCheckStats" Grid.Column="1" Content="Sprawdź staty" HorizontalAlignment="Left" Height="65" Margin="55,320,0,0" VerticalAlignment="Top" Width="224"  Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.ColumnSpan="2" Click="BtnCheckStats_Click"/>
+        <Button x:Name="Btn_load" HorizontalAlignment="Left" Height="32" Margin="8,10,0,0" VerticalAlignment="Top" Width="178" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Grid.Column="4" Grid.ColumnSpan="2" Click="Btn_load_Click">
+            <TextBlock Text="Wczytaj postać" TextWrapping="Wrap" FontFamily="Cooper Black" FontSize="18"/>
+        </Button>
+        <Button x:Name="Btn_save" HorizontalAlignment="Left" Height="32" Margin="96,10,0,0" VerticalAlignment="Top" Width="178" Background="#FFD0A921" FontFamily="Cooper Black" FontSize="18" Click="Btn_save_click" Grid.Column="3">
+            <TextBlock Text="Zapisz Postać" TextWrapping="Wrap" FontFamily="Cooper Black" FontSize="18"/>
+        </Button>
+        <TextBox x:Name="HeroNameBox"  Grid.Column="4" HorizontalAlignment="Left" Height="21" Margin="10,43,0,0" TextWrapping="Wrap" Text="Wpisz nazwe postaci" TextAlignment="Center" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2" Background="#FFE8E7CF" FontFamily="Cooper Black"/>
+        <Button x:Name = "Btn_exit" Grid.Column="1" Content="Wyjdź" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="59" Margin="55,415,0,0" VerticalAlignment="Top" Width="214" Background="#FFB9420A" FontFamily="Cooper Black" FontSize="18" Click="Btn_exit_Click" BorderBrush="#FF7F7F7F"/>
+    </Grid>
+</Window>

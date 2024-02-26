@@ -1,0 +1,24 @@
+﻿<Window x:Class="GUI.CharacterCreation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="CharacterCreation" Height="500" Width="1000">
+    <Grid Background="#FFFFFEFE">
+        <Label Content="Nazwa postaci" HorizontalAlignment="Center" Height="44" Margin="0,21,0,0" VerticalAlignment="Top" Width="144" FontFamily="Cooper Black" FontSize="17" FontWeight="Bold"/>
+        <Label Content="Klasa postaci" HorizontalAlignment="Center" Height="44" Margin="0,107,0,0" VerticalAlignment="Top" Width="126" FontFamily="Cooper Black" FontSize="17" FontWeight="Bold"/>
+        <Button x:Name="BWarrior" Content="Wojownik" HorizontalAlignment="Left" Height="20" Margin="120,165,0,0" VerticalAlignment="Top" Width="80" Background="#FFD8443D" FontWeight="Bold" Click="BWarrior_Click"/>
+        <Button x:Name="BRogue" Content="Łotr" HorizontalAlignment="Right" Height="20" Margin="0,165,104,0" VerticalAlignment="Top" Width="80" Background="#FF5CB155" FontWeight="Bold" Click="BRogue_Click"/>
+        <Button x:Name="BMage" Content="Mag" HorizontalAlignment="Center" Height="20" Margin="0,165,0,0" VerticalAlignment="Top" Width="80" Background="#FF4473B3" FontWeight="Bold" Click="BMage_Click"/>
+        <Image Source="Postacie/Warrior.jpg" HorizontalAlignment="Left" Height="170" Margin="75,190,0,0" VerticalAlignment="Top" Width="176"/>
+        <Image Source="Postacie/Mage.jpg" HorizontalAlignment="Left" Height="170" Margin="436,190,0,0" VerticalAlignment="Top" Width="134"/>
+        <Image Source="Postacie/Rogue.jpg" HorizontalAlignment="Left" Height="170" Margin="756,190,0,0" VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="PlayerName" HorizontalAlignment="Center" Height="32" Margin="0,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" TextAlignment="Center" FontSize="16" FontFamily="Cooper Black"/>
+        <TextBlock x:Name="WarriorStats" HorizontalAlignment="Left" Height="80" Margin="105,372,0,0" TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" VerticalAlignment="Top" Width="140" FontFamily="Cooper Black"/>
+        <TextBlock x:Name="MageStats" HorizontalAlignment="Left" Height="80" Margin="432,372,0,0" TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" VerticalAlignment="Top" Width="140" FontFamily="Cooper Black"/>
+        <TextBlock x:Name="RogueStats" HorizontalAlignment="Left" Height="80" Margin="786,372,0,0" TextWrapping="Wrap" Text="TextBlock" TextAlignment="Center" VerticalAlignment="Top" Width="140" FontFamily="Cooper Black"/>
+
+    </Grid>
+</Window>

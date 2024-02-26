@@ -1,0 +1,16 @@
+﻿<Window x:Class="GUI.PlayerEQWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="PlayerEQ" Height="369" Width="328">
+    <Grid Background="#FF674914" Margin="0,0,0,-6">
+        <ListBox x:Name="ItemList" HorizontalAlignment="Left" Height="264" VerticalAlignment="Top" Width="161" d:ItemsSource="{d:SampleData ItemCount=5}" Background="#FFBCDE96" Margin="146,32,0,0" FontFamily="Cooper Black"/>
+        <Button x:Name="BtnInfo" Content="Opis" HorizontalAlignment="Left" Height="38" Margin="39,32,0,0" VerticalAlignment="Top" Width="85" FontFamily="Cooper Black" Background="#FF949493" Click="BtnInfo_Click"/>
+        <Button x:Name="BtnDelete" Content="Usuń" HorizontalAlignment="Left" Height="38" Margin="39,101,0,0" VerticalAlignment="Top" Width="85" FontFamily="Cooper Black" Background="#FF949493" Click="BtnDelete_Click"/>
+        <Button x:Name="BtnEscEQ" Content="Wyjdź" HorizontalAlignment="Left" Height="38" Margin="39,180,0,0" VerticalAlignment="Top" Width="85" FontFamily="Cooper Black" Background="#FF949493" Click="BtnEscEQ_Click"/>
+
+    </Grid>
+</Window>
